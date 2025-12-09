@@ -182,6 +182,44 @@ h2::after {
     margin-left: auto;
 }
 
+/* Education Section */
+.education-item {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.education-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.education-header h3 {
+    color: #764ba2;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.education-header .institution {
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.education-header .period {
+    color: #888;
+    font-style: italic;
+    margin-left: auto;
+}
+
 .experience-description {
     color: #555;
     font-size: 1.05em;
@@ -407,13 +445,15 @@ h2::after {
         gap: 15px;
     }
 
-    .experience-header {
+    .experience-header,
+    .education-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
     }
 
-    .experience-header .period {
+    .experience-header .period,
+    .education-header .period {
         margin-left: 0;
     }
 }
